@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 :root {
-    --c1: #111;
+    --c1: #00305e;
     --c2: #9D9D9D;
   }
 *{
@@ -91,6 +91,17 @@ a{
     background: var(--c1);
     color: #EEEAEF;
 }
+.page-body  .capsule-btn{
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+.page-body .capsule-btn:hover{
+    border: 3px solid #EEEAEF;
+}
+.pg-2 .page-body .capsule-btn:hover{
+    border: 3px solid var(--c1);
+}
+
 .col-page{
     position: relative;
     width: 100%;
@@ -142,6 +153,7 @@ a{
     width: 100%;
 }
 .page-title{
+    text-align: left;
     width: 100%;
     text-transform: uppercase;
     font-size: 2em;
@@ -275,6 +287,43 @@ a{
 button{
     cursor: pointer;
 }
+.uni-logo{
+    float: left;
+    width: 15%;
+    margin: 2%;
+}
+.contacts-box{
+    text-align: left;
+}
+.contacts-box > .flex-col{
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.contacts-box > .flex-col > .flex-inline,
+.flex-inline.fbs{
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.contacts-box > .flex-col > .flex-inline > .flex-col,
+.flex-inline.fbs > .flex-col{
+    flex: 1;
+    align-items: flex-start;
+}
+.contacts-box > .flex-col > .flex-inline > i.material-icons,
+.flex-inline.fbs i.material-icons{
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.cname{
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h2{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 /* 696px */
 @media screen and (max-width: 696px) {
     *{
@@ -324,5 +373,8 @@ button{
     }
     .cntctusbtn > .capsule-btn{
         font-size: 0.6em;
+    }
+    .uni-logo{
+        width: 40%;
     }
   }
