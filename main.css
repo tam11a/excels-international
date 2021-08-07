@@ -54,7 +54,7 @@ a{
 .ex-logo{
     height: 200px;
     width: 200px;
-    background: url('/statics/img/unnamed.png');
+    background: url('statics/img/unnamed.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
