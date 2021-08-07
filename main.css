@@ -97,6 +97,7 @@ a{
     flex: 1;
     width: 100%;
     padding-top: 70px;
+    text-align: center;
 }
 .hd-title{
     margin: 5px 0;
