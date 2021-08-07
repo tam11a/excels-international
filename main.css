@@ -374,6 +374,33 @@ h2{
 .img-holder .pgf-child{
     min-height: 400px;
 }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 100000; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--c1); /* Set a background color */
+    color: var(--c3); /* Text color */
+    border: 3px solid var(--c3);
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+  }
+  
+  #myBtn:hover {
+    background-color: var(--c2); /* Add a dark-grey background on hover */
+    color: var(--c1);
+    border: 3px solid var(--c1);
+    font-weight: bold;
+  }
+
+  #myBtn > i.material-icons{
+      padding: 10px;
+  }
+
 /* 696px */
 @media screen and (max-width: 696px) {
     *{
