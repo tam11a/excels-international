@@ -13,7 +13,7 @@
 
 <body>
     <div class="header-div grid-center">
-        <a href="#contact-us" class="cntctusbtn">
+        <a href="contact.html" class="cntctusbtn">
             <button class="capsule-btn">contact us</button>
         </a>
         <div class="hd-body flex-col">
@@ -190,7 +190,7 @@
                         <div class="flex-inline">
                             <i class="material-icons">place</i>
                             <div class="flex-col">
-                                <span>Excels International, LMQ Road,</span>
+                                <span>Excels Consultancy, LMQ Road,</span>
                                 <span>Kutchery Chowk, Multan, Pakistan.</span>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
                         <i class="material-icons">facebook</i>
                         <div class="flex-col">
                             <a href="https://www.facebook.com/ExcelsInternational" target="_blank">
-                                <span>Excels International</span>
+                                <span>Excels Consultancy</span>
                             </a>
                         </div>
                     </div>
@@ -261,6 +261,33 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="material-icons">arrow_upward</i>
     </button>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102035215500089");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="main.js"></script>
 </body>
 
